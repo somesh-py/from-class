@@ -25,7 +25,7 @@ def add_show(request):
     
     fm=UserRegistration()
     stud=User.objects.all()
-    return render(request,'enroll/addandshow.html',{'form':fm,'stu':stud})
+    return render(request,'enroll/addandshow.html',{'form':fm,'st':stud})
     
 def update_data(request,id):
     if request.method=='POST':
